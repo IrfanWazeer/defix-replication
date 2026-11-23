@@ -1,2 +1,0 @@
-click
-attrs>=17.4.0

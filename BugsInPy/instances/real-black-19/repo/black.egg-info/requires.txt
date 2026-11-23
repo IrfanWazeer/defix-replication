@@ -1,3 +1,0 @@
-click
-attrs>=17.4.0
-appdirs
