@@ -1,0 +1,18 @@
+E
+======================================================================
+ERROR: test_default_port (test_api.ListenerPortTests.test_default_port)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-be00m87c\repo\tests\test_api.py", line 10, in test_default_port
+    self.assertEqual(listener_port(), 8080)
+                     ^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-be00m87c\repo\api.py", line 5, in listener_port
+    return int(os.environ["APP_PORT"])
+               ~~~~~~~~~~^^^^^^^^^^^^
+  File "<frozen os>", line 714, in __getitem__
+KeyError: 'APP_PORT'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+FAILED (errors=1)

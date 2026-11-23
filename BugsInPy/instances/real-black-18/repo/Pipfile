@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+attrs = ">=17.4.0"
+click = ">=6.5"
+appdirs = "*"
+
+[dev-packages]
+pre-commit = "*"
+coverage = "*"
+flake8 = "*"
+flake8-bugbear = "*"
+flake8-mypy = "*"
+mypy = "*"
+readme_renderer = "*"
+recommonmark = "*"
+Sphinx = "*"
+setuptools = ">=39.2.0"
+twine = ">=1.11.0"
+wheel = ">=0.31.1"

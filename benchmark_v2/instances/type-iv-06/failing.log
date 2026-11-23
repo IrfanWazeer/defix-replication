@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_configured_duration (test_api.SecondsTests.test_configured_duration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-az72xlea\repo\tests\test_api.py", line 7, in test_configured_duration
+    self.assertEqual(seconds({"duration": {"milliseconds": 2500}}), 2.5)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-az72xlea\repo\api.py", line 2, in seconds
+    return configuration["duration"]["millisecond"] / 1000
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'millisecond'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

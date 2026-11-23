@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_separator_order (test_api.EmailShapeTests.test_separator_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-j9wmzmu2\repo\tests\test_api.py", line 7, in test_separator_order
+    self.assertFalse(has_email_shape("person.example@host"))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

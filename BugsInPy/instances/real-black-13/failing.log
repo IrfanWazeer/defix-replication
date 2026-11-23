@@ -1,0 +1,21 @@
+======================================================================
+ERROR: test_python37 (tests.test_black.BlackTestCase.test_python37)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-f32esx50\workspace\tests\test_black.py", line 417, in test_python37
+    actual = fs(source)
+             ^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-f32esx50\workspace\black.py", line 610, in format_str
+    src_node = lib2to3_parse(src_contents)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-f32esx50\workspace\black.py", line 681, in lib2to3_parse
+    raise exc from None
+ValueError: Cannot parse: 4:16:     return (i*2 async for i in arange(42))
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+FAILED (errors=1)

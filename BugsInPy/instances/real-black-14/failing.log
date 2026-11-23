@@ -1,0 +1,16 @@
+======================================================================
+FAIL: test_get_future_imports (tests.test_black.BlackTestCase.test_get_future_imports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-q7y4ur7r\workspace\tests\test_black.py", line 741, in test_get_future_imports
+    self.assertEqual({"unicode_literals"}, black.get_future_imports(node))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-q7y4ur7r\workspace\black.py", line 2937, in get_future_imports
+    assert import_from_child.type == syms.import_as_names
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+FAILED (failures=1)

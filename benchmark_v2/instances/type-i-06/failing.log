@@ -1,0 +1,22 @@
+E
+======================================================================
+ERROR: test_api (unittest.loader._FailedTest.test_api)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-1wxi2cyk\repo\tests\test_api.py", line 2, in <module>
+    from api import mean_value
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-1wxi2cyk\repo\api.py", line 1, in <module>
+    import statistics.mean as average
+ModuleNotFoundError: No module named 'statistics.mean'; 'statistics' is not a package
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_discount (test_api.InvoiceAmountTests.test_discount)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-k_y6rwvm\repo\tests\test_api.py", line 7, in test_discount
+    self.assertEqual(invoice_amount(100, 15), 85)
+AssertionError: -85 != 85
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

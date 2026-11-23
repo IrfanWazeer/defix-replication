@@ -1,0 +1,10 @@
+diff --git a/paths.py b/paths.py
+index 9681ecf..dd6b844 100644
+--- a/paths.py
++++ b/paths.py
+@@ -1,4 +1,4 @@
+-from os.path import PurePath
++from pathlib import PurePath
+ 
+ 
+ def normalize(value):

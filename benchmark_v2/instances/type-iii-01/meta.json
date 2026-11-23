@@ -1,0 +1,7 @@
+{
+  "id": "type-iii-01",
+  "fault_type": "Type-III",
+  "root_cause_hops": 0,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Calculates an invoice amount after applying a discount."
+}

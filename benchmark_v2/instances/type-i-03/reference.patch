@@ -1,0 +1,9 @@
+diff --git a/decoder.py b/decoder.py
+--- a/decoder.py
++++ b/decoder.py
+@@ -1,4 +1,4 @@
+-from codecs import JSONDecodeError
++from json import JSONDecodeError
+ import json
+ 
+ 

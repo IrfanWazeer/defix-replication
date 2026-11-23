@@ -1,0 +1,112 @@
+Expected tree:
+file_input
+  decorated
+    decorators
+      decorator
+        AT '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+      decorator
+        AT '# TODO: X\n' '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+      decorator
+        AT '# TODO: Y\n# TODO: Z\n' '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+    /decorators
+    funcdef
+      NAME 'def'
+      NAME ' ' 'foo'
+      parameters
+        LPAR '('
+        RPAR ')'
+      /parameters
+      COLON ':'
+      suite
+        NEWLINE '\n'
+        INDENT '    '
+        simple_stmt
+          NAME 'pass'
+          NEWLINE '\n'
+        /simple_stmt
+        DEDENT ''
+      /suite
+    /funcdef
+  /decorated
+  ENDMARKER ''
+/file_input
+Actual tree:
+file_input
+  decorated
+    decorators
+      decorator
+        AT '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+      decorator
+        AT '# TODO: X\n\n\n' '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+      decorator
+        AT '# TODO: Y\n# TODO: Z\n\n\n' '@'
+        NAME 'property'
+        NEWLINE '\n'
+      /decorator
+    /decorators
+    funcdef
+      NAME 'def'
+      NAME ' ' 'foo'
+      parameters
+        LPAR '('
+        RPAR ')'
+      /parameters
+      COLON ':'
+      suite
+        NEWLINE '\n'
+        INDENT '    '
+        simple_stmt
+          NAME 'pass'
+          NEWLINE '\n'
+        /simple_stmt
+        DEDENT ''
+      /suite
+    /funcdef
+  /decorated
+  ENDMARKER ''
+/file_input
+======================================================================
+FAIL: test_comment_in_decorator (tests.test_black.BlackTestCase.test_comment_in_decorator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-v7zn4py_\workspace\tests\test_black.py", line 633, in test_comment_in_decorator
+    self.assertFormatEqual(expected, actual)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-v7zn4py_\workspace\tests\test_black.py", line 100, in assertFormatEqual
+    self.assertEqual(expected, actual)
+AssertionError: '@pro[13 chars]: X\n@property\n# TODO: Y\n# TODO: Z\n@propert[21 chars]ss\n' != '@pro[13 chars]: X\n\n\n@property\n# TODO: Y\n# TODO: Z\n\n\n[29 chars]ss\n'
+  @property
+  # TODO: X
++ 
++ 
+  @property
+  # TODO: Y
+  # TODO: Z
++ 
++ 
+  @property
+  def foo():
+      pass
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.012s
+
+FAILED (failures=1)

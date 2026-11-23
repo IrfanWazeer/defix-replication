@@ -1,0 +1,9 @@
+diff --git a/adapter.py b/adapter.py
+--- a/adapter.py
++++ b/adapter.py
+@@ -2,4 +2,4 @@
+ 
+ 
+ def register(user_id, email):
+-    return create_user(user_id, email)
++    return create_user(user_id=user_id, email=email)

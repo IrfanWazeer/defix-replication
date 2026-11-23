@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_upper_endpoint (test_api.RangeTests.test_upper_endpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-pgbcprsm\repo\tests\test_api.py", line 7, in test_upper_endpoint
+    self.assertTrue(within_range(10, 2, 10))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

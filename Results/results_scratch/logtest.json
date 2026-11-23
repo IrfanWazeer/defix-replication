@@ -1,0 +1,38 @@
+[
+  {
+    "instance_id": "type-i-01",
+    "mode": "full",
+    "validation_mode": "strict",
+    "context_hops": 2,
+    "sanitizer": "on",
+    "sanitizer_report": {
+      "had_fence": true,
+      "had_prose": false,
+      "headers_ok": true,
+      "changed": true,
+      "hunk_counts_fixed": true
+    },
+    "final_status": "RESOLVED",
+    "parse_ok": true,
+    "context_truncated": false,
+    "accepted": true,
+    "true_exec_pass": true,
+    "false_positive": false,
+    "fault_type": "Type-I",
+    "root_cause_hops": 0,
+    "run_id": "full-strict-h2-son-r001",
+    "prompt_tokens_actual": 1511,
+    "completion_tokens_actual": 613,
+    "iterations": 1,
+    "execution_time_seconds": 11.393438500002958,
+    "pass_at_1": true,
+    "error": null,
+    "patch_text": "diff --git a/api.py b/api.py\nindex 1234567..89abcde 100644\n--- a/api.py\n+++ b/api.py\n@@ -2,4 +2,4 @@ import math\n \n \n def distance(x, y):\n-    return sqrt(x * x + y * y)\n+    return math.sqrt(x * x + y * y)\n",
+    "raw_llm_output": "```diff\ndiff --git a/api.py b/api.py\nindex 1234567..89abcde 100644\n--- a/api.py\n+++ b/api.py\n@@ -2,5 +2,5 @@ import math\n \n \n def distance(x, y):\n-    return sqrt(x * x + y * y)\n+    return math.sqrt(x * x + y * y)\n```",
+    "patch_applied": true,
+    "sandbox_stdout": "Initialized empty Git repository in C:/Users/KIMS COLLEGE/AppData/Local/Temp/defix-sandbox-_y9hcub3/workspace/.git/\n",
+    "sandbox_stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "llm_verdict": "PASSED",
+    "git_commit": "748992982a3ad703b9f502b40594ad2e81e4704b"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "instance_id": "type-ii-03",
+    "mode": "full",
+    "validation_mode": "strict",
+    "context_hops": 2,
+    "sanitizer": "on",
+    "sanitizer_report": {
+      "had_fence": false,
+      "had_prose": false,
+      "headers_ok": false,
+      "changed": true,
+      "hunk_counts_fixed": true
+    },
+    "final_status": "HALTED_MAX_ITER",
+    "parse_ok": true,
+    "context_truncated": false,
+    "accepted": false,
+    "true_exec_pass": false,
+    "false_positive": false,
+    "fault_type": "Type-II",
+    "root_cause_hops": 2,
+    "run_id": "full-strict-h2-son-r001",
+    "prompt_tokens_actual": 7822,
+    "completion_tokens_actual": 3457,
+    "iterations": 3,
+    "execution_time_seconds": 130.7135588999954,
+    "pass_at_1": false,
+    "error": null,
+    "patch_text": "diff --git a/policy.py b/policy.py\nindex 0000000..1111111 100644\n--- a/policy.py\n+++ b/policies/policy.py\n@@ -1,2 +1,6 @@\n+def allows_management(role):\n+    if role in [\"admin\", \"manager\"]:\n+        return True\n+    return False\n def allows_management(role):\n     return False\n",
+    "raw_llm_output": "diff --git a/policy.py b/policy.py\nindex 0000000..1111111 100644\n--- a/policy.py\n+++ b/policies/policy.py\n@@ -1,3 +1,6 @@\n+def allows_management(role):\n+    if role in [\"admin\", \"manager\"]:\n+        return True\n+    return False\n def allows_management(role):\n     return False",
+    "patch_applied": false,
+    "sandbox_stdout": "Initialized empty Git repository in C:/Users/KIMS COLLEGE/AppData/Local/Temp/defix-sandbox-ubwm9k83/workspace/.git/\n",
+    "sandbox_stderr": "C:/Users/KIMSCO~1/AppData/Local/Temp/defix-sandbox-ubwm9k83/workspace/tmppnfodd94.patch:6: trailing whitespace.\ndef allows_management(role):\nC:/Users/KIMSCO~1/AppData/Local/Temp/defix-sandbox-ubwm9k83/workspace/tmppnfodd94.patch:7: trailing whitespace.\n    if role in [\"admin\", \"manager\"]:\nC:/Users/KIMSCO~1/AppData/Local/Temp/defix-sandbox-ubwm9k83/workspace/tmppnfodd94.patch:8: trailing whitespace.\n        return True\nC:/Users/KIMSCO~1/AppData/Local/Temp/defix-sandbox-ubwm9k83/workspace/tmppnfodd94.patch:9: trailing whitespace.\n    return False\nerror: patch failed: policy.py:1\nerror: policy.py: patch does not apply\n",
+    "llm_verdict": "FAILED",
+    "git_commit": "748992982a3ad703b9f502b40594ad2e81e4704b"
+  }
+]

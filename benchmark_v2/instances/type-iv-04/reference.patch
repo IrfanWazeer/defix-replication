@@ -1,0 +1,9 @@
+diff --git a/storage_config.py b/storage_config.py
+--- a/storage_config.py
++++ b/storage_config.py
+@@ -2,4 +2,4 @@
+ 
+ 
+ def records_directory():
+-    return os.getenv("DATA_ROOT", "/srv/records")
++    return os.getenv("APP_DATA_DIR", "/srv/records")

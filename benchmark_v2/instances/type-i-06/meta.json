@@ -1,0 +1,7 @@
+{
+  "id": "type-i-06",
+  "fault_type": "Type-I",
+  "root_cause_hops": 0,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Computes the arithmetic mean for a collection of measurements."
+}

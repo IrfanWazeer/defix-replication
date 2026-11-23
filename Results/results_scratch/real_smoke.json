@@ -1,0 +1,38 @@
+[
+  {
+    "instance_id": "real-black-09",
+    "mode": "single_prompt_loop",
+    "validation_mode": "strict",
+    "context_hops": 2,
+    "sanitizer": "on",
+    "sanitizer_report": {
+      "had_fence": true,
+      "had_prose": false,
+      "headers_ok": true,
+      "changed": true,
+      "hunk_counts_fixed": false
+    },
+    "final_status": "HALTED_MAX_ITER",
+    "parse_ok": true,
+    "context_truncated": true,
+    "accepted": false,
+    "true_exec_pass": false,
+    "false_positive": false,
+    "fault_type": "Real",
+    "root_cause_hops": -1,
+    "run_id": "single_prompt_loop-strict-h2-son-r001",
+    "prompt_tokens_actual": 6430,
+    "completion_tokens_actual": 360,
+    "iterations": 3,
+    "execution_time_seconds": 10.657735500019044,
+    "pass_at_1": false,
+    "error": null,
+    "patch_text": "--- a/black.py\n+++ b/black.py\n@@ -745,7 +745,7 @@ def lib2to3_parse(src_txt: str, target_versions: Iterable[TargetVersion] = ()) -\n     for grammar in get_grammars(set(target_versions)):\n         drv = driver.Driver(grammar, pytree.convert)\n         try:\n-            result = drv.parse_string(src_txt, True, True)\n+            result = drv.parse_string(src_txt, True)\n             break\n \n         except ParseError as pe:\n",
+    "raw_llm_output": "```diff\n--- a/black.py\n+++ b/black.py\n@@ -745,7 +745,7 @@ def lib2to3_parse(src_txt: str, target_versions: Iterable[TargetVersion] = ()) -\n     for grammar in get_grammars(set(target_versions)):\n         drv = driver.Driver(grammar, pytree.convert)\n         try:\n-            result = drv.parse_string(src_txt, True, True)\n+            result = drv.parse_string(src_txt, True)\n             break\n \n         except ParseError as pe:\n```",
+    "patch_applied": false,
+    "sandbox_stdout": "Initialized empty Git repository in C:/Users/KIMS COLLEGE/AppData/Local/Temp/defix-sandbox-d762km55/workspace/.git/\n",
+    "sandbox_stderr": "error: patch failed: black.py:745\nerror: black.py: patch does not apply\n",
+    "llm_verdict": "NOT_RUN",
+    "git_commit": "8bf22eb6d2ae31bb4d12bf289a1b2ca8b3b7b662"
+  }
+]

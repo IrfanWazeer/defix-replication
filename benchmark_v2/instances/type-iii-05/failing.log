@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_custom_pattern (test_api.DisplayDateTests.test_custom_pattern)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-olnu3nht\repo\tests\test_api.py", line 8, in test_custom_pattern
+    self.assertEqual(display_date(date(2025, 7, 9), "%Y/%m/%d"), "2025/07/09")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-olnu3nht\repo\api.py", line 5, in display_date
+    return render_date(value, fmt=pattern)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render_date() got an unexpected keyword argument 'fmt'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (errors=1)

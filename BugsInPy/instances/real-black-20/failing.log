@@ -1,0 +1,54 @@
+FAIL: test_expression_diff (tests.test_black.BlackTestCase.test_expression_diff)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-x67z_gu1\workspace\tests\test_black.py", line 215, in test_expression_diff
+    self.assertEqual(expected, actual, msg)
+AssertionError: '--- <stdin>  (original)\n+++ <stdin>  (format[9503 chars]ER\n' != '--- blk_7foh5w4f.log  (original)\n+++ blk_7fo[9521 chars]ER\n'
+- --- <stdin>  (original)
+- +++ <stdin>  (formatted)
++ --- blk_7foh5w4f.log  (original)
++ +++ blk_7foh5w4f.log  (formatted)
+  @@ -1,8 +1,8 @@
+   ...
+  -'some_string'
+  -b'\\xa3'
+  +"some_string"
+  +b"\\xa3"
+   Name
+   None
+   True
+   False
+   1
+  @@ -29,60 +29,78 @@
+   ~great
+   +value
+   -1
+   ~int and not v1 ^ 123 + v2 | True
+   (~int) and (not ((v1 ^ (123 + v2)) | True))
+  -flags & ~ select.EPOLLIN and waiters.write_task is not None
+  +flags & ~select.EPOLLIN and waiters.write_task is not None
+   lambda arg: None
+   lambda a=True: a
+   lambda a, b, c=True: a
+  -lambda a, b, c=True, *, d=(1 << v2), e='str': a
+  -lambda a, b, c=True, *vararg, d=(v1 << 2), e='str', **kwargs: a + b
+  -foo = (lambda port_id, ignore_missing: {"port1": port1_resource, "port2": port2_resource}[port_id])
+  +lambda a, b, c=True, *, d=(1 << v2), e="str": a
+  +lambda a, b, c=True, *vararg, d=(v1 << 2), e="str", **kwargs: a + b
+  +foo = (
+  +    lambda port_id, ignore_missing: {"port1": port1_resource, "port2": port2_resource}[
+  +        port_id
+  +    ]
+  +)
+   1 if True else 2
+   str or None if True else str or bytes or None
+   (str or None) if True else (str or bytes or None)
+   str or None if (1 if True else 2) else str or bytes or None
+   (str or None) if (1 if True else 2) else (str or bytes or None)
+  -{'2.7': dead, '3.7': (long_live or die_hard)}
+  
+[... message truncated ...]
+----------------------------------------------------------------------
+Ran 1 test in 0.157s
+
+FAILED (failures=1)

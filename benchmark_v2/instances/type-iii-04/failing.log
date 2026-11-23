@@ -1,0 +1,20 @@
+E
+======================================================================
+ERROR: test_account_fields (test_api.AccountTests.test_account_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-decv4k2d\repo\tests\test_api.py", line 7, in test_account_fields
+    self.assertEqual(create_account("u-4", "a@example.test"), {"id": "u-4", "email": "a@example.test"})
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-decv4k2d\repo\api.py", line 5, in create_account
+    return register(user_id, email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-decv4k2d\repo\adapter.py", line 5, in register
+    return create_user(user_id, email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_user() takes 0 positional arguments but 2 were given
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (errors=1)

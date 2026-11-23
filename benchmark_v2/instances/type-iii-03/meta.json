@@ -1,0 +1,7 @@
+{
+  "id": "type-iii-03",
+  "fault_type": "Type-III",
+  "root_cause_hops": 1,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Runs an operation using the default retry policy."
+}

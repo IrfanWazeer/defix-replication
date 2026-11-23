@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_administrator_access (test_api.ManagementAccessTests.test_administrator_access)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-uxvqtsuu\repo\tests\test_api.py", line 7, in test_administrator_access
+    self.assertTrue(manage_access("admin"))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

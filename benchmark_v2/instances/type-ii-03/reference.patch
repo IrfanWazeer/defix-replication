@@ -1,0 +1,11 @@
+diff --git a/policy.py b/policy.py
+index 26b772e..5b67cda 100644
+--- a/policy.py
++++ b/policy.py
+@@ -1,4 +1,4 @@
+ def allows_management(role):
+     if role == "admin":
+-        return False
+-    return True
++        return True
++    return False

@@ -1,0 +1,13 @@
+======================================================================
+FAIL: test_preserves_line_endings (tests.test_black.BlackTestCase.test_preserves_line_endings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-hqg3nume\workspace\tests\test_black.py", line 1123, in test_preserves_line_endings
+    self.assertNotIn(b"\r\n", updated_contents)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'\r\n' unexpectedly found in b'def f():\r\n    pass\r\n'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.028s
+
+FAILED (failures=1)

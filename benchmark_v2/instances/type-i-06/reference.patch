@@ -1,0 +1,9 @@
+diff --git a/api.py b/api.py
+--- a/api.py
++++ b/api.py
+@@ -1,4 +1,4 @@
+-import statistics.mean as average
++from statistics import mean as average
+ 
+ 
+ def mean_value(values):

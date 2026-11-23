@@ -1,0 +1,7 @@
+{
+  "id": "type-ii-05",
+  "fault_type": "Type-II",
+  "root_cause_hops": 1,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Selects a page of records from a sequence."
+}

@@ -1,0 +1,20 @@
+E
+======================================================================
+ERROR: test_timeout (test_api.TimeoutTests.test_timeout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jw11t_dv\repo\tests\test_api.py", line 7, in test_timeout
+    self.assertEqual(timeout({"timeout": 12}), 12)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jw11t_dv\repo\api.py", line 5, in timeout
+    return timeout_value(config)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jw11t_dv\repo\connection.py", line 2, in timeout_value
+    return config["connect_timeout"]
+           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'connect_timeout'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (errors=1)

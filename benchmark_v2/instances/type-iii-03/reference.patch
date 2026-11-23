@@ -1,0 +1,9 @@
+diff --git a/retrying.py b/retrying.py
+--- a/retrying.py
++++ b/retrying.py
+@@ -1,4 +1,4 @@
+-def run_once(operation, attempts=0):
++def run_once(operation, attempts=1):
+     for _ in range(attempts):
+         if operation():
+             return True

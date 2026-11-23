@@ -1,0 +1,7 @@
+{
+  "id": "type-ii-04",
+  "fault_type": "Type-II",
+  "root_cause_hops": 2,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Counts the calendar days covered by a booking."
+}

@@ -1,0 +1,15 @@
+{
+  "instance_id": "real-black-13",
+  "test_cmd": "\"C:/Users/KIMS COLLEGE/Desktop/F Drive/PhD Research Work/Coding Part/bugsinpy_work/work/black-13/venv/Scripts/python.exe\" -m unittest -q tests.test_black.BlackTestCase.test_python37",
+  "fault_type": "Real",
+  "root_cause_hops": -1,
+  "source": "BugsInPy",
+  "project": "black",
+  "bug_id": 13,
+  "buggy_commit_id": "b719d85ccc330170e40b2617307a7e3b2a0bab14",
+  "fixed_commit_id": "883689366ce0f0e0ddd66d81360c61abfd19b01a",
+  "reference_patch_files": [
+    "blib2to3/pgen2/tokenize.py"
+  ],
+  "log_chars": 1149
+}

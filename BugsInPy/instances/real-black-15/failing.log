@@ -1,0 +1,55 @@
+FAIL: test_fmtonoff2 (tests.test_black.BlackTestCase.test_fmtonoff2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-anyqwszx\workspace\tests\test_black.py", line 407, in test_fmtonoff2
+    self.assertFormatEqual(expected, actual)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-anyqwszx\workspace\tests\test_black.py", line 122, in assertFormatEqual
+    self.assertEqual(expected, actual)
+AssertionError: "impo[277 chars]s\n\ndef check_fader(test):\n    pass\n\ndef t[177 chars]on\n" != "impo[277 chars]s\n\n\ndef check_fader(test):\n    pass\n\n\nd[172 chars]on\n"
+  import pytest
+  
+  TmSt = 1
+  TmEx = 2
+  
+  # fmt: off
+  
+  # Test data:
+  #   Position, Volume, State, TmSt/TmEx/None, [call, [arg1...]]
+  
+  @pytest.mark.parametrize('test', [
+  
+      # Test don't manage the volume
+      [
+          ('stuff', 'in')
+      ],
+  ])
+  def test_fader(test):
+      pass
+  
++ 
+  def check_fader(test):
+      pass
++ 
+  
+  def test_calculate_fades():
+      calcs = [
+          # one is zero/none
+-         (0, 4, 0, 0, 10,        0, 0, 6, 10),
+?                          -------
++         (0, 4, 0, 0, 10, 0, 0, 6, 10),
+-         (None, 4, 0, 0, 10,     0, 0, 6, 10),
+?                             ----
++         (None, 4, 0, 0, 10, 0, 0, 6, 10),
+      ]
+  
++ 
+  # fmt: on
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.065s
+
+FAILED (failures=1)

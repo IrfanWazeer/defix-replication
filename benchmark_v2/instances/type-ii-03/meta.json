@@ -1,0 +1,7 @@
+{
+  "id": "type-ii-03",
+  "fault_type": "Type-II",
+  "root_cause_hops": 2,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Determines whether a user can access an administrative operation."
+}

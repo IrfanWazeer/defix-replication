@@ -1,0 +1,37 @@
+FAIL: test_python2 (tests.test_black.BlackTestCase.test_python2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-w0_scz_i\workspace\tests\test_black.py", line 187, in test_python2
+    self.assertFormatEqual(expected, actual)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-w0_scz_i\workspace\tests\test_black.py", line 67, in assertFormatEqual
+    self.assertEqual(expected, actual)
+AssertionError: '#!/u[39 chars]nt >>sys.stderr, "Warning:",\nprint >>sys.stde[214 chars]))\n' != '#!/u[39 chars]nt >> sys.stderr, "Warning:",\nprint >> sys.st[217 chars]))\n'
+  #!/usr/bin/env python2
+  
+  import sys
+  
+- print >>sys.stderr, "Warning:",
++ print >> sys.stderr, "Warning:",
+?         +
+- print >>sys.stderr, "this is a blast from the past."
++ print >> sys.stderr, "this is a blast from the past."
+?         +
+- print >>sys.stderr, "Look, a repr:", ` sys `
++ print >> sys.stderr, "Look, a repr:", ` sys `
+?         +
+  
+  
+  def function((_globals, _locals)):
+      exec "print 'hi from exec!'" in _globals, _locals
+  
+  
+  function((globals(), locals()))
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.032s
+
+FAILED (failures=1)

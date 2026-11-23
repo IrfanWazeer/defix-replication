@@ -1,0 +1,7 @@
+diff --git a/connection.py b/connection.py
+--- a/connection.py
++++ b/connection.py
+@@ -1,2 +1,2 @@
+ def timeout_value(config):
+-    return config["connect_timeout"]
++    return config["timeout"]

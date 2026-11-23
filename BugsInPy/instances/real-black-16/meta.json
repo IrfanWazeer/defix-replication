@@ -1,0 +1,15 @@
+{
+  "instance_id": "real-black-16",
+  "test_cmd": "\"C:/Users/KIMS COLLEGE/Desktop/F Drive/PhD Research Work/Coding Part/bugsinpy_work/work/black-16/venv/Scripts/python.exe\" -m unittest -q tests.test_black.BlackTestCase.test_symlink_out_of_root_directory",
+  "fault_type": "Real",
+  "root_cause_hops": -1,
+  "source": "BugsInPy",
+  "project": "black",
+  "bug_id": 16,
+  "buggy_commit_id": "fb34c9e19589d05f92084a28940837151251ebd6",
+  "fixed_commit_id": "42a3fe53319a8c02858c2a96989ed1339f84515a",
+  "reference_patch_files": [
+    "black.py"
+  ],
+  "log_chars": 1220
+}

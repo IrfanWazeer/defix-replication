@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_distance (test_api.DistanceTests.test_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-f29pt4__\repo\tests\test_api.py", line 7, in test_distance
+    self.assertEqual(distance(3, 4), 5)
+                     ^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-f29pt4__\repo\api.py", line 5, in distance
+    return sqrt(x * x + y * y)
+           ^^^^
+NameError: name 'sqrt' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)

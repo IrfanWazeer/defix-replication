@@ -1,0 +1,7 @@
+{
+  "id": "type-iv-01",
+  "fault_type": "Type-IV",
+  "root_cause_hops": 0,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Reads the listener port from the process environment."
+}

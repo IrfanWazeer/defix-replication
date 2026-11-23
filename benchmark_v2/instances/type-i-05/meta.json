@@ -1,0 +1,7 @@
+{
+  "id": "type-i-05",
+  "fault_type": "Type-I",
+  "root_cause_hops": 1,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Builds an absolute cache location from a configured directory."
+}

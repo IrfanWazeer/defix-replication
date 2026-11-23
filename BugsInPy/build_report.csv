@@ -1,0 +1,17 @@
+instance_id,status,detail
+real-black-07,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-08,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-09,BUILT,parse_ok=True target=black.py patch_files=['black.py']
+real-black-10,BUILT,parse_ok=True target=tests/test_black.py patch_files=['blib2to3/pgen2/driver.py']
+real-black-11,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-12,BUILT,parse_ok=True target=black.py patch_files=['black.py']
+real-black-13,BUILT,parse_ok=True target=black.py patch_files=['blib2to3/pgen2/tokenize.py']
+real-black-14,BUILT,"parse_ok=True target=black.py patch_files=['black.py', 'tests/data/python2_unicode_literals.py']"
+real-black-15,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-16,BUILT,parse_ok=True target=black.py patch_files=['black.py']
+real-black-17,BUILT,parse_ok=True target=black.py patch_files=['black.py']
+real-black-18,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-19,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-20,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-22,BUILT,parse_ok=True target=tests/test_black.py patch_files=['black.py']
+real-black-23,BUILT,"parse_ok=True target=tests/test_black.py patch_files=['black.py', 'blib2to3/pygram.py', 'tests/function.py']"

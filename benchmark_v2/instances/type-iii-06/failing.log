@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_value_for (test_api.LookupTests.test_value_for)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-mhqud2r1\repo\tests\test_api.py", line 7, in test_value_for
+    self.assertEqual(value_for("code", {"code": "ready"}), "READY")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-mhqud2r1\repo\api.py", line 6, in value_for
+    return result.upper()
+           ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'upper'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (errors=1)

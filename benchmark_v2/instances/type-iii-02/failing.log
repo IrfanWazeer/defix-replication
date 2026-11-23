@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_record_label (test_api.RecordLabelTests.test_record_label)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-3o_sl_j7\repo\tests\test_api.py", line 7, in test_record_label
+    self.assertEqual(record_label("Report", "Lee"), "Report (Lee)")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-3o_sl_j7\repo\api.py", line 5, in record_label
+    return render_record(title)
+           ^^^^^^^^^^^^^^^^^^^^
+TypeError: render_record() missing 1 required positional argument: 'creator'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

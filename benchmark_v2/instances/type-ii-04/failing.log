@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_single_day (test_api.BookingDaysTests.test_single_day)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-qi5nfu6p\repo\tests\test_api.py", line 8, in test_single_day
+    self.assertEqual(days_booked(date(2025, 5, 1), date(2025, 5, 1)), 1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (failures=1)

@@ -1,0 +1,7 @@
+{
+  "id": "type-iii-05",
+  "fault_type": "Type-III",
+  "root_cause_hops": 0,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Formats a date using a caller-provided pattern."
+}

@@ -1,0 +1,9 @@
+diff --git a/cache_path.py b/cache_path.py
+--- a/cache_path.py
++++ b/cache_path.py
+@@ -1,2 +1,5 @@
++from pathlib import Path
++
++
+ def cache_location(root, name):
+     return str(Path(root) / name)

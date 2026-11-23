@@ -1,0 +1,7 @@
+diff --git a/calendar_rules.py b/calendar_rules.py
+--- a/calendar_rules.py
++++ b/calendar_rules.py
+@@ -1,2 +1,2 @@
+ def count_days(start, end):
+-    return (end - start).days
++    return (end - start).days + 1

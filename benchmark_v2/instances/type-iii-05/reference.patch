@@ -1,0 +1,8 @@
+diff --git a/dates.py b/dates.py
+--- a/dates.py
++++ b/dates.py
+@@ -1,2 +1,2 @@
+-def render_date(value, pattern):
+-    return value.strftime(pattern)
++def render_date(value, fmt):
++    return value.strftime(fmt)

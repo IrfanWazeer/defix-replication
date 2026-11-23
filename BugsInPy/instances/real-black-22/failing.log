@@ -1,0 +1,44 @@
+FAIL: test_comments3 (tests.test_black.BlackTestCase.test_comments3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-h91p27_k\workspace\tests\test_black.py", line 157, in test_comments3
+    self.assertFormatEqual(expected, actual)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-h91p27_k\workspace\tests\test_black.py", line 69, in assertFormatEqual
+    self.assertEqual(expected, actual)
+AssertionError: "def [645 chars]tion(\n                        exc,\n         [802 chars] )\n" != "def [645 chars]tion(exc, limit=limit, lookup_lines=lookup_lin[645 chars] )\n"
+  def func():
+      lcomp3 = [
+          # This one is actually too long to fit in a single line.
+          element.split('\n', 1)[0]
+          # yup
+          for element in collection.select_elements()
+          # right
+          if element is not None
+      ]
+      # Capture each of the exceptions in the MultiError along with each of their causes and contexts
+      if isinstance(exc_value, MultiError):
+          embedded = []
+          for exc in exc_value.exceptions:
+              if exc not in _seen:
+                  embedded.append(
+                      # This should be left alone (before)
++                     traceback.TracebackException.from_exception(exc, limit=limit, lookup_lines=lookup_lines, capture_locals=capture_locals, _seen=set(_seen))
+-                     traceback.TracebackException.from_exception(
+-                         exc,
+-                         limit=limit,
+-                         lookup_lines=lookup_lines,
+-                         capture_locals=capture_locals,
+-                         # copy the set of _seen exceptions so that duplicates
+? ----
++                     # copy the set of _seen exceptions so that duplicates
+-                         # shared between sub-exceptions are not omitted
+? ----
++                     # shared between sub-exceptions are not omitt
+[... message truncated ...]
+----------------------------------------------------------------------
+Ran 1 test in 0.079s
+
+FAILED (failures=1)

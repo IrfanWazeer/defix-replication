@@ -1,0 +1,23 @@
+E
+======================================================================
+ERROR: test_setting_value (test_api.SettingValueTests.test_setting_value)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-ckszvfo3\repo\tests\test_api.py", line 7, in test_setting_value
+    self.assertEqual(setting_value(), "enabled=true")
+                     ^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-ckszvfo3\repo\api.py", line 5, in setting_value
+    return (Path(__file__).parent / "resources" / "app.ini").read_text(encoding="utf-8").strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\KIMSCO~1\\AppData\\Local\\Temp\\benchmark-v2-ckszvfo3\\repo\\resources\\app.ini'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)

@@ -1,0 +1,76 @@
+FAIL: test_comments6 (tests.test_black.BlackTestCase.test_comments6)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-3t207k6b\workspace\tests\test_black.py", line 369, in test_comments6
+    self.assertFormatEqual(expected, actual)
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-3t207k6b\workspace\tests\test_black.py", line 156, in assertFormatEqual
+    self.assertEqual(expected, actual)
+AssertionError: 'from[32 chars]ef f(\n    a,  # type: int\n):\n    pass\n\n\n[1362 chars]nt\n' != 'from[32 chars]ef f(a,):  # type: int\n    pass\n\n\n# test t[1330 chars]nt\n'
+  from typing import Any, Tuple
+  
+  
++ def f(a,):  # type: int
+- def f(
+-     a,  # type: int
+- ):
+      pass
+  
+  
+  # test type comments
+  def f(a, b, c, d, e, f, g, h, i):
+      # type: (int, int, int, int, int, int, int, int, int) -> None
+      pass
+  
+  
+  def f(
+      a,  # type: int
+      b,  # type: int
+      c,  # type: int
+      d,  # type: int
+      e,  # type: int
+      f,  # type: int
+      g,  # type: int
+      h,  # type: int
+      i,  # type: int
+  ):
+      # type: (...) -> None
+      pass
+  
+  
+  def f(
+      arg,  # type: int
+      *args,  # type: *Any
+      default=False,  # type: bool
+      **kwargs,  # type: **Any
+  ):
+      # type: (...) -> None
+      pass
+  
+  
++ def f(a, b, c, d):  # type: int  # type: int  # type: int  # type: int
+- def f(
+-     a,  # type: int
+-     b,  # type: int
+-     c,  # type: int
+-     d,  # type: int
+- ):
+      # type: (...) -> None
+  
+      element = 0  # type: int
+      another_element = 1  # type: float
+      another_element_with_long_name = 2  # type: int
+      another_really_really_long_element_with_a_unnecessarily_long_name_to_describe_what_it_does_enterprise_style = (
+          3
+      )  # type: int
+  
+      tup = (
+          another_element,  # type: int
+          another_really_really_long_element_with_a_unnecessarily_long_name_to_describe_w
+[... message truncated ...]
+----------------------------------------------------------------------
+Ran 1 test in 0.075s
+
+FAILED (failures=1)

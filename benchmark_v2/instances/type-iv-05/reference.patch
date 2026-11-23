@@ -1,0 +1,9 @@
+diff --git a/messages.py b/messages.py
+--- a/messages.py
++++ b/messages.py
+@@ -2,4 +2,4 @@
+ 
+ 
+ def read_message():
+-    return Path("resources/message.txt").read_text(encoding="utf-8").strip()
++    return (Path(__file__).parent / "resources" / "message.txt").read_text(encoding="utf-8").strip()

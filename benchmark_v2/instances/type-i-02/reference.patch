@@ -1,0 +1,11 @@
+diff --git a/helper.py b/helper.py
+--- a/helper.py
++++ b/helper.py
+@@ -1,5 +1,5 @@
+-from datetime import datetime, UTCZone
++from datetime import datetime, timezone
+ 
+ 
+ def timestamp(year, month, day):
+-    return datetime(year, month, day, tzinfo=UTCZone.utc).isoformat()
++    return datetime(year, month, day, tzinfo=timezone.utc).isoformat()

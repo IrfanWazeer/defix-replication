@@ -1,0 +1,26 @@
+E
+======================================================================
+ERROR: test_message_from_other_working_directory (test_api.MessageTests.test_message_from_other_working_directory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jc3umr2p\repo\tests\test_api.py", line 13, in test_message_from_other_working_directory
+    self.assertEqual(message(), "service ready")
+                     ^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jc3umr2p\repo\api.py", line 5, in message
+    return read_message()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-jc3umr2p\repo\messages.py", line 5, in read_message
+    return Path("resources/message.txt").read_text(encoding="utf-8").strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'resources\\message.txt'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.093s
+
+FAILED (errors=1)

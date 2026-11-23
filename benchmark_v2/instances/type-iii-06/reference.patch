@@ -1,0 +1,10 @@
+diff --git a/api.py b/api.py
+--- a/api.py
++++ b/api.py
+@@ -2,5 +2,5 @@
+ 
+ 
+ def value_for(key, entries):
+-    result = lookup(key, entries)
++    result, _ = lookup(key, entries)
+     return result.upper()

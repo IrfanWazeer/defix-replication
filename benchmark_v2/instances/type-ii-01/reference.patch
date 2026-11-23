@@ -1,0 +1,7 @@
+diff --git a/api.py b/api.py
+--- a/api.py
++++ b/api.py
+@@ -1,2 +1,2 @@
+ def within_range(value, lower, upper):
+-    return lower <= value < upper
++    return lower <= value <= upper

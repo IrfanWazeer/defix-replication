@@ -1,0 +1,11 @@
+diff --git a/pricing.py b/pricing.py
+index 6b3d363..408310a 100644
+--- a/pricing.py
++++ b/pricing.py
+@@ -1,4 +1,4 @@
+ def shipping_cost(quantity, express):
+     if express:
+-        return 8
+-    return 15
++        return 15
++    return 8

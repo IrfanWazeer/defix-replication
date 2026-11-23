@@ -1,0 +1,9 @@
+diff --git a/api.py b/api.py
+--- a/api.py
++++ b/api.py
+@@ -2,4 +2,4 @@
+ 
+ 
+ def invoice_amount(subtotal, discount):
+-    return calculate_total(discount, subtotal)
++    return calculate_total(subtotal, discount)

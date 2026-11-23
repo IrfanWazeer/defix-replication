@@ -1,0 +1,15 @@
+{
+  "instance_id": "real-black-18",
+  "test_cmd": "\"C:/Users/KIMS COLLEGE/Desktop/F Drive/PhD Research Work/Coding Part/bugsinpy_work/work/black-18/venv/Scripts/python.exe\" -m unittest -q tests.test_black.BlackTestCase.test_preserves_line_endings",
+  "fault_type": "Real",
+  "root_cause_hops": -1,
+  "source": "BugsInPy",
+  "project": "black",
+  "bug_id": 18,
+  "buggy_commit_id": "dbe26161fa68632d608a440666a0960a32630902",
+  "fixed_commit_id": "00a302560b92951c22f0f4c8d618cf63de39bd57",
+  "reference_patch_files": [
+    "black.py"
+  ],
+  "log_chars": 716
+}

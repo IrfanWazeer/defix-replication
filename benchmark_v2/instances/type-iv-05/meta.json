@@ -1,0 +1,7 @@
+{
+  "id": "type-iv-05",
+  "fault_type": "Type-IV",
+  "root_cause_hops": 1,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Reads a message stored alongside the service resources."
+}

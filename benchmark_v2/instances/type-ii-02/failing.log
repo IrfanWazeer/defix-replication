@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_express_shipping (test_api.ShippingTests.test_express_shipping)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-7rx401zu\repo\tests\test_api.py", line 7, in test_express_shipping
+    self.assertEqual(order_shipping(1, True), 15)
+AssertionError: 8 != 15
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

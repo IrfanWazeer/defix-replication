@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_default_attempt (test_api.RunTests.test_default_attempt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-s0v0ivdf\repo\tests\test_api.py", line 13, in test_default_attempt
+    self.assertTrue(run(operation))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

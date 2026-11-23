@@ -1,0 +1,7 @@
+diff --git a/api.py b/api.py
+--- a/api.py
++++ b/api.py
+@@ -1,2 +1,2 @@
+ def seconds(configuration):
+-    return configuration["duration"]["millisecond"] / 1000
++    return configuration["duration"]["milliseconds"] / 1000

@@ -1,0 +1,7 @@
+{
+  "id": "type-i-04",
+  "fault_type": "Type-I",
+  "root_cause_hops": 2,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Resolves a normalized file name through the application service."
+}

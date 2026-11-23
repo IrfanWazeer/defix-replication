@@ -1,0 +1,21 @@
+======================================================================
+ERROR: test_python2_print_function (tests.test_black.BlackTestCase.test_python2_print_function)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMS COLLEGE\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1396, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-g_9vkykb\workspace\tests\test_black.py", line 468, in test_python2_print_function
+    actual = fs(source, mode=mode)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-g_9vkykb\workspace\black.py", line 669, in format_str
+    src_node = lib2to3_parse(src_contents.lstrip(), mode.target_versions)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\defix-real-base-g_9vkykb\workspace\black.py", line 758, in lib2to3_parse
+    raise exc from None
+black.InvalidInput: Cannot parse: 6:13: print(a, file=sys.stderr)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.021s
+
+FAILED (errors=1)

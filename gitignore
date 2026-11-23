@@ -1,0 +1,17 @@
+# Secrets - NEVER commit
+.env
+.env.*
+*.key
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+# Large third-party copies (rebuilt by scripts)
+real_bugs_kit/black/
+**/black_repo/
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

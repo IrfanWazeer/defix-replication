@@ -1,0 +1,60 @@
+[
+  {
+    "instance_id": "type-i-01",
+    "mode": "full",
+    "validation_mode": "strict",
+    "context_hops": 2,
+    "sanitizer": "on",
+    "sanitizer_report": {
+      "had_fence": true,
+      "had_prose": false,
+      "headers_ok": true,
+      "changed": true,
+      "hunk_counts_fixed": true
+    },
+    "final_status": "RESOLVED",
+    "parse_ok": true,
+    "context_truncated": false,
+    "accepted": true,
+    "true_exec_pass": true,
+    "false_positive": false,
+    "fault_type": "Type-I",
+    "root_cause_hops": 0,
+    "run_id": "full-strict-h2-son-r001",
+    "prompt_tokens_actual": 1511,
+    "completion_tokens_actual": 642,
+    "iterations": 1,
+    "execution_time_seconds": 6.301489000034053,
+    "pass_at_1": true,
+    "error": null
+  },
+  {
+    "instance_id": "type-ii-01",
+    "mode": "full",
+    "validation_mode": "strict",
+    "context_hops": 2,
+    "sanitizer": "on",
+    "sanitizer_report": {
+      "had_fence": false,
+      "had_prose": false,
+      "headers_ok": true,
+      "changed": true,
+      "hunk_counts_fixed": false
+    },
+    "final_status": "RESOLVED",
+    "parse_ok": true,
+    "context_truncated": false,
+    "accepted": true,
+    "true_exec_pass": true,
+    "false_positive": false,
+    "fault_type": "Type-II",
+    "root_cause_hops": 0,
+    "run_id": "full-strict-h2-son-r001",
+    "prompt_tokens_actual": 1676,
+    "completion_tokens_actual": 814,
+    "iterations": 1,
+    "execution_time_seconds": 26.569662599998992,
+    "pass_at_1": true,
+    "error": null
+  }
+]

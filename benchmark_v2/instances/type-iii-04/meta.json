@@ -1,0 +1,7 @@
+{
+  "id": "type-iii-04",
+  "fault_type": "Type-III",
+  "root_cause_hops": 2,
+  "test_cmd": "python -m unittest discover -s tests",
+  "description": "Creates an account through the user service adapter."
+}

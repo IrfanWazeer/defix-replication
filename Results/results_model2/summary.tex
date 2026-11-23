@@ -1,0 +1,46 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{llllrrrrrrrr}
+Mode & Validation & Hops & Sanitizer & n & Pass rate & 95\% CI & Pass@1 & Mean iter. & Mean time & False+ & Run rate mean $\pm$ std \\
+\hline
+full & strict & 2 & on & 48 & 0.7917 & [0.6574, 0.8827] & 0.3750 & 1.9375 & 56.3309 & 0 & 0.7917 $\pm$ 0.0589 \\
+single\_prompt\_loop & strict & 2 & on & 48 & 0.8542 & [0.7283, 0.9275] & 0.7500 & 1.4583 & 4.7818 & 0 & 0.8542 $\pm$ 0.0884 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.7500 \\
+fault_type & Type-III & 12 & 0.8333 \\
+fault_type & Type-IV & 12 & 0.5833 \\
+root_cause_hops & 0 & 20 & 0.9000 \\
+root_cause_hops & 1 & 18 & 0.7778 \\
+root_cause_hops & 2 & 10 & 0.6000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.7500 \\
+fault_type & Type-III & 12 & 0.8333 \\
+fault_type & Type-IV & 12 & 0.8333 \\
+root_cause_hops & 0 & 20 & 0.9500 \\
+root_cause_hops & 1 & 18 & 0.8333 \\
+root_cause_hops & 2 & 10 & 0.7000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llllrrrrr}
+Mode & Validation & Hops & Sanitizer & Fenced & Prose & Headers OK & Changed & Recounted \\
+\hline
+full & strict & 2 & on & 0 & 4 & 46 & 48 & 48 \\
+single\_prompt\_loop & strict & 2 & on & 0 & 5 & 45 & 48 & 45 \\
+\end{tabular}
+\end{table}

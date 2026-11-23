@@ -1,0 +1,142 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{llllrrrrrrrr}
+Mode & Validation & Hops & Sanitizer & n & Pass rate & 95\% CI & Pass@1 & Mean iter. & Mean time & False+ & Run rate mean $\pm$ std \\
+\hline
+full & hybrid & 2 & on & 24 & 1.0000 & [0.8620, 1.0000] & 1.0000 & 1.0000 & 45.6973 & 4 & 1.0000 $\pm$ 0.0000 \\
+full & strict & 0 & on & 48 & 0.6250 & [0.4836, 0.7478] & 0.4792 & 1.8958 & 1000.4230 & 0 & 0.6250 $\pm$ 0.0000 \\
+full & strict & 2 & off & 48 & 0.4792 & [0.3447, 0.6167] & 0.2917 & 2.2917 & 121.5243 & 0 & 0.4792 $\pm$ 0.0295 \\
+full & strict & 2 & on & 72 & 0.9583 & [0.8845, 0.9857] & 0.8333 & 1.2083 & 63.8620 & 0 & 0.9583 $\pm$ 0.0000 \\
+single\_prompt & strict & 0 & on & 48 & 0.8750 & [0.7530, 0.9414] & 0.8750 & 1.0000 & 3.5557 & 0 & 0.8750 $\pm$ 0.0000 \\
+single\_prompt\_loop & strict & 0 & on & 48 & 0.6250 & [0.4836, 0.7478] & 0.6250 & 1.7500 & 7.9820 & 0 & 0.6250 $\pm$ 0.0000 \\
+single\_prompt\_loop & strict & 2 & off & 48 & 0.4167 & [0.2885, 0.5572] & 0.4167 & 2.1667 & 8.2045 & 0 & 0.4167 $\pm$ 0.0000 \\
+single\_prompt\_loop & strict & 2 & on & 48 & 0.9167 & [0.8045, 0.9671] & 0.9167 & 1.1667 & 4.5906 & 0 & 0.9167 $\pm$ 0.0000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 6 & 1.0000 \\
+fault_type & Type-II & 6 & 1.0000 \\
+fault_type & Type-III & 6 & 1.0000 \\
+fault_type & Type-IV & 6 & 1.0000 \\
+root_cause_hops & 0 & 10 & 1.0000 \\
+root_cause_hops & 1 & 9 & 1.0000 \\
+root_cause_hops & 2 & 5 & 1.0000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.0000 \\
+fault_type & Type-III & 12 & 0.6667 \\
+fault_type & Type-IV & 12 & 0.8333 \\
+root_cause_hops & 0 & 20 & 0.7000 \\
+root_cause_hops & 1 & 18 & 0.5556 \\
+root_cause_hops & 2 & 10 & 0.6000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 0.6667 \\
+fault_type & Type-II & 12 & 0.5000 \\
+fault_type & Type-III & 12 & 0.3333 \\
+fault_type & Type-IV & 12 & 0.4167 \\
+root_cause_hops & 0 & 20 & 0.4500 \\
+root_cause_hops & 1 & 18 & 0.6111 \\
+root_cause_hops & 2 & 10 & 0.3000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 18 & 1.0000 \\
+fault_type & Type-II & 18 & 0.8333 \\
+fault_type & Type-III & 18 & 1.0000 \\
+fault_type & Type-IV & 18 & 1.0000 \\
+root_cause_hops & 0 & 30 & 1.0000 \\
+root_cause_hops & 1 & 27 & 1.0000 \\
+root_cause_hops & 2 & 15 & 0.8000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.8333 \\
+fault_type & Type-III & 12 & 0.8333 \\
+fault_type & Type-IV & 12 & 0.8333 \\
+root_cause_hops & 0 & 20 & 1.0000 \\
+root_cause_hops & 1 & 18 & 0.7778 \\
+root_cause_hops & 2 & 10 & 0.8000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.0000 \\
+fault_type & Type-III & 12 & 0.6667 \\
+fault_type & Type-IV & 12 & 0.8333 \\
+root_cause_hops & 0 & 20 & 0.7000 \\
+root_cause_hops & 1 & 18 & 0.5556 \\
+root_cause_hops & 2 & 10 & 0.6000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 0.6667 \\
+fault_type & Type-II & 12 & 0.3333 \\
+fault_type & Type-III & 12 & 0.1667 \\
+fault_type & Type-IV & 12 & 0.5000 \\
+root_cause_hops & 0 & 20 & 0.6000 \\
+root_cause_hops & 1 & 18 & 0.2222 \\
+root_cause_hops & 2 & 10 & 0.4000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+Stratification & Value & n & Pass rate \\
+\hline
+fault_type & Type-I & 12 & 1.0000 \\
+fault_type & Type-II & 12 & 0.6667 \\
+fault_type & Type-III & 12 & 1.0000 \\
+fault_type & Type-IV & 12 & 1.0000 \\
+root_cause_hops & 0 & 20 & 1.0000 \\
+root_cause_hops & 1 & 18 & 1.0000 \\
+root_cause_hops & 2 & 10 & 0.6000 \\
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}{llllrrrrr}
+Mode & Validation & Hops & Sanitizer & Fenced & Prose & Headers OK & Changed & Recounted \\
+\hline
+full & hybrid & 2 & on & 9 & 0 & 23 & 24 & 13 \\
+full & strict & 0 & on & 20 & 0 & 45 & 48 & 29 \\
+full & strict & 2 & off & 11 & 0 & 48 & 0 & 0 \\
+full & strict & 2 & on & 28 & 0 & 69 & 72 & 39 \\
+single\_prompt & strict & 0 & on & 48 & 0 & 48 & 48 & 30 \\
+single\_prompt\_loop & strict & 0 & on & 48 & 0 & 48 & 48 & 16 \\
+single\_prompt\_loop & strict & 2 & off & 48 & 0 & 48 & 0 & 0 \\
+single\_prompt\_loop & strict & 2 & on & 48 & 0 & 48 & 48 & 24 \\
+\end{tabular}
+\end{table}

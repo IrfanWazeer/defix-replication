@@ -1,0 +1,20 @@
+E
+======================================================================
+ERROR: test_cache_file (test_api.CacheFileTests.test_cache_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-s26umn39\repo\tests\test_api.py", line 8, in test_cache_file
+    self.assertEqual(cache_file("/var/cache", "entry.bin"), str(Path("/var/cache") / "entry.bin"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-s26umn39\repo\api.py", line 5, in cache_file
+    return cache_location(root, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KIMSCO~1\AppData\Local\Temp\benchmark-v2-s26umn39\repo\cache_path.py", line 2, in cache_location
+    return str(Path(root) / name)
+               ^^^^
+NameError: name 'Path' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)
