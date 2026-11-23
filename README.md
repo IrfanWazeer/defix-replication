@@ -9,8 +9,9 @@ Code, benchmark and result files for the paper
   Note: `src/utils/docker_runner.py` keeps its old name but does NOT use Docker. The sandbox is a temporary copy of the repository, with no network or resource isolation.
 - `config/` : prompts and settings (`prompts.py`, `settings.py`).
 - `benchmark_v2/` : the 24 synthetic instances (6 each of Type-I to Type-IV). Each instance has the buggy repository, `unittest` tests, a reference patch (never shown to a model) and an automatically generated `failing.log`.
-- `results/` : raw per-run result files for every configuration reported in the paper.
-- `scripts/` : `evaluate_v2.py`, `analyze_v2.py`, `paper_numbers.py` (rebuild every number in the paper from `results/`), and the BugsInPy pilot scripts (`build_real_instances.py`, `validate_bugsinpy.py`, `build_report.csv`, per-instance `meta.json` and `failing.log`).
+- `Results/` : raw per-run result files for every configuration reported in the paper.
+- `scripts/` : `evaluate_v2.py`, `analyze_v2.py`, `paper_numbers.py` (rebuild every number in the paper from `Results/`).
+- `BugsInPy/` : the real-bug pilot: `build_real_instances.py`, `build_report.csv`, and for each of the 16 `black` bugs (`instances/real-black-NN/`) the `failing.log`, `meta.json` and `reference_patch.diff`. The `repo/` copies are not included (rebuild with `build_real_instances.py`).
 - `PAPER_NUMBERS.md` : output of `paper_numbers.py`.
 
 ## Not included
@@ -27,7 +28,7 @@ Models used: `qwen/qwen3.8-27b` and `openai/gpt-oss-20b` through the Groq API (t
 3. Run the evaluation, e.g. `python scripts/evaluate_v2.py` (see the script header for options).
 4. Rebuild the tables: `python scripts/analyze_v2.py` and `python scripts/paper_numbers.py`.
 
-LLM output is stochastic even at temperature 0 and free-tier rate limits change run times, so counts may differ slightly. The result files in `results/` are the ones behind the paper.
+LLM output is stochastic even at temperature 0 and free-tier rate limits change run times, so counts may differ slightly. The result files in `Results/` are the ones behind the paper.
 
 ## Code versions
 Commits used for the experiments: `848fcce`, `7489929`, `8bf22eb`, `3f93ce7` (see the paper, Section 5.2).
